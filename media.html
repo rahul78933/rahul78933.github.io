@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+
+.header {
+  overflow: hidden;
+  background-color: black;
+  padding: 2px 2px;
+  border-bottom-color: #e5e5e5
+   
+}
+#nav {
+width:1500px;
+margin: auto;
+list-style:none;
+}
+.header a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+    
+.header a:hover {
+  background-color: white     ;
+  color: black;
+}
+img {
+    width: 20%;
+    height: auto;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+
+
+input[type=text], input[type=email], select, textarea {
+    width: 65%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit],input[type=reset] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=reset]:hover {
+    background-color: #45a049;
+}
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+
+.left {
+  background-color:lightgrey;
+  padding:10px;
+  float:left;
+  margin:0px 10px 0px 10px;
+  width:30%; /* The width is 20%, by default */
+}
+
+
+.main {
+  background-color:lightgrey;
+  padding:10px;
+  float:left;
+    margin:0px 10px 0px 10px;
+  width:25%; /* The width is 60%, by default */
+}
+
+.right {
+  background-color:lightgrey;
+  padding:10px;
+  float:left;
+    margin:0px 20px 0px 10px;
+  width:30%; /* The width is 20%, by default */
+}
+
+
+/* Use a media query to add a break point at 800px: */
+@media screen and (max-width:800px) {
+.header a {
+    float: none;
+    display: block;
+    text-align: left;}}
+	@media screen and (max-width:800px){
+    .left, .main, .right {
+    width:100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
+</style>
+<body>
+<div class ="header">
+<a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+<a  href="https://twitter.com/" class="fa fa-twitter"></a>
+<a href="https://accounts.google.com/signin" class="fa fa-google"></a>
+</div>
+<img src="logo.png" alt="ngo"   height="200" width="220">
+
+<div class="header">
+<ul id="nav">
+    <li><a href="ngo.html">HOME</a></li>
+    <li><a href="who we are">WHO WE ARE</a></li>
+    <li><a href="#our programs">OUR PROGRAMS</a></li>
+	 <li><a href="#stories of transformation">STORIES OF TRANSFORMATION</a></li>
+	  <li><a href="#donate">DONATE</a></li>
+	   <li><a href="#volunteer">VOLUNTEER</a></li>
+	    <li><a href="#our team">OUR TEAM</a></li>
+			    <li><a href="c1.html">CONTACT US</a></li>	
+
+</ul></div>
+
+
+<div class="left" >
+  <h2>ADDRESS</h2>
+    <p>147/K, 12th Main Rd, </p> 
+	<p> Koramangala 3 Block, Koramangala, </p> 
+	<p> Bengaluru, Karnataka 560034, India</p>
+	<p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.663273858657!2d77.62517071482156!3d12.92935049088359!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae145c2798319f%3A0x7b556501c8104097!2sSRS+Business+Solutions+India+Private+Limited!5e0!3m2!1sen!2sin!4v1525018103881" width="400" height="250" frameborder="0" style="border:0" allowfullscreen></iframe></p>
+</div>
+
+<div class="main">
+   <h3>CONTACT:</h3>
+    <p>OUR EMAIL : **********</p>
+    <p>OUR PHONE NUMBER : @#$#@$$@@$@</p>
+</div>
+
+<div class="right" >
+<div class="container">
+   <form  method="">
+   <label for=comments>Name: </label><br>
+		 <input type="text" name="name" required><br><br>
+		 <label for=comments>Email: </label><br>
+		 <input type="email" name="email" required><br><br>
+		<label for=comments>Contact No: </label><br>
+		 <input type="text" name="contact" required><br><br>
+		<label for=comments>Comments: </label><br>
+		    <textarea id="" name="comments" placeholder="Write something.." style="height: 150px; margin: 0px; width: 65%;"></textarea><br>
+			<input type="submit" value="Send">
+			<input type="reset">
+</form>
+</div>
+
+</body>
+</html>
